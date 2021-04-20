@@ -47,5 +47,10 @@ namespace _109_2Mid {
                 tb_Des.Visible = true;
             }
         }
+
+        protected void btn_Sub_Click(object sender, EventArgs e)
+        {
+            lb_Msg = ddl_Area + "<br/>";
+        }
     }
 }

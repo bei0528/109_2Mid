@@ -26,7 +26,7 @@
             <asp:RadioButton ID="RadioButton1" runat="server" Font-Size="Medium" Text="否" OnCheckedChanged="RadioButton1_CheckedChanged" /><br/>
             <asp:RadioButton ID="RadioButton2" runat="server" Text="是" Font-Size="Medium" OnCheckedChanged="RadioButton2_CheckedChanged" /><br/>
             <asp:TextBox ID="tb_Des" runat="server" Visible="False" Width="400px"></asp:TextBox><br/>
-            <asp:Button ID="btn_Sub" runat="server" Text="送出" /><br/>
+            <asp:Button ID="btn_Sub" runat="server" Text="送出" OnClick="btn_Sub_Click" /><br/>
             <asp:Label ID="lb_Msg" runat="server" Font-Size="Medium"></asp:Label>
 
     </form>
