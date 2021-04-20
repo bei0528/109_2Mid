@@ -10,5 +10,10 @@ namespace _109_2Mid {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void bt_Next_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

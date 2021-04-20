@@ -7,8 +7,21 @@ using System.Web.UI.WebControls;
 
 namespace _109_2Mid {
     public partial class Sample1Com : System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
-
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Ib_Res.Text = Request.Form.Get("tb_Acc") + "<br/>" + Request.Form.Get("tb_Pass") + "<br/>";
+            if (Request.Form.Get("RadioButton1") == "on")
+            {
+                Ib_Res.Text = Ib_Res.Text + "看書" + "<br/>";
+            }
+            if (Request.Form.Get("RadioButton2") == "on")
+            {
+                Ib_Res.Text = Ib_Res.Text + "打電動" + "<br/>";
+            }
+            if (Request.Form.Get("RadioButton3") == "on")
+            {
+                Ib_Res.Text = Ib_Res.Text + "其他" + "<br/>";
+            }
         }
     }
 }
